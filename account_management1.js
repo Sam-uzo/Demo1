@@ -1,4 +1,4 @@
-export function accountManagement1() {
+function accountManagement1() {
     const dealsButton = document.getElementById("deals_button");
     const overview = document.getElementById("Overview");
     const Overview_txt = document.getElementById("Overview_txt");
