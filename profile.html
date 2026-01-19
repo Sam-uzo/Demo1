@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff]">
+    <div class="bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex flex-col bg-[#0F766E] text-white justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png"
+              alt="logo"
+              class="w-48 h-12"
+            />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mage_dashboard-3_zpdhaf.png"
+                alt="overview"
+              />
+              <a href="/overview.html" class="block">Overview</a>
+            </div>
+            <div class="flex space-x-3 px-4 py-2 bg-white rounded">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-01_lrezdo.png"
+                alt="agreement"
+              />
+              <a href="profile.html" class="block text-teal-800 font-medium"
+                >Partner Discovery</a
+              >
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-add-01_bmq2on.png"
+                alt="user_icon"
+              />
+              <a href="approval.html" class="block">Partners</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/sticky-note-03_a0ax5a.png"
+                alt="stickynote"
+              />
+              <a href="report.html" class="block">Reports</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/proicons_settings_jvr1vh.png"
+                alt="setting_icon"
+              />
+              <a href="setting.html" class="block">Settings</a>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png"
+            alt="logout_icon"
+          />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center p-2 pt-0 mb-6 border-b w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png"
+              alt="vector"
+            />
+            <div class="flex space-x-2">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png"
+                alt="avatar"
+              />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span>Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-md p-4 text-sm text-gray-500 shadow-md mb-4"
+        >
+          Partner Discovery <span class="mx-2">›</span>
+          <span class="text-gray-800 font-medium">Partner profile</span>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <h2 class="text-xl font-bold text-gray-700 mb-4">
+            Sunset Spa & Wellness
+          </h2>
+          <div class="flex gap-3">
+            <span
+              class="bg-[#F5FAFF] w-28 h-10 py-2 text-center text-sm text-[#437ef7] rounded-3xl"
+            >
+              wellness
+            </span>
+            <div class="flex space-x-2 justify-center items-center">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/location_icon_aqehtb.png"
+                alt="icon"
+                class="h-6 w-6"
+              />
+              <p class="font-medium text-sm text-[#475569]">Lagos, NG</p>
+            </div>
+          </div>
+          <!-- About -->
+          <div class="py-4">
+            <h2 class="text-xl font-bold text-gray-700 mb-4">About Partner</h2>
+            <p class="text-sm text-[#64748B]">
+              Premium spa services with massage therapy, aromatherapy, and
+              wellness treatments for ultimate relaxation. Our partnership
+              provides exclusive benefits for hotel guests including priority
+              booking, special discounts, and premium service upgrades. We are
+              committed to delivering exceptional experiences that complement
+              your guests' stay and enhance their overall satisfaction.
+            </p>
+          </div>
+
+          <!-- Business Details -->
+          <div class="py-4">
+            <h2 class="text-xl font-bold text-gray-700 mb-2">
+              Business Details
+            </h2>
+            <p class="text-[#64748B] font-semibold">Service offered</p>
+            <div class="flex gap-10 py-4">
+              <ul
+                class="list-disc list-inside text-sm text-[#64748B] space-y-3"
+              >
+                <li>Premium service package</li>
+                <li>Premium service package</li>
+                <li>Custom tailored packages</li>
+              </ul>
+              <ul
+                class="list-disc list-inside text-sm text-[#64748B] text-400 space-y-3"
+              >
+                <li>Group bookings available</li>
+                <li>Priority access for guests</li>
+                <li>Dedicated concierge support</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="mb-6 space-y-4">
+            <h2 class="text-xl font-bold text-gray-700 mb-2">
+              Contact Information
+            </h2>
+            <div class="flex space-x-4">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mail-01_klkut5.png"
+                alt="mail_icon"
+                class="p-2 bg-[#ecf3ff] rounded-xl"
+              />
+              <p class="text-sm text-[#64748B]">
+                Email <br />
+                <span class="text-black font-bold"
+                  >contact@sunsetspawellness.com</span
+                >
+              </p>
+            </div>
+            <div class="flex space-x-4">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749475/call-02_ubpbl4.png"
+                alt="call_icon"
+                class="p-2 bg-[#e8f8f3] rounded-xl"
+              />
+              <p class="text-sm text-[#64748B]">
+                Phone number <br />
+                <span class="text-black font-bold">+234 916 406 2990</span>
+              </p>
+            </div>
+            <div class="flex space-x-4">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/link-04_flrcbr.png"
+                alt="icon"
+                class="p-2 bg-[#f3e6f3] rounded-xl"
+              />
+              <p class="text-sm text-[#64748B]">
+                Website <br />
+                <span class="text-black font-bold">
+                  <a
+                    href="https://www.sunsetspawellness.com"
+                    class="text-black-600 hover:underline"
+                    >www.sunsetspawellness.com</a
+                  ></span
+                >
+              </p>
+            </div>
+          </div>
+
+          <!-- Performance Summary -->
+          <div class="mb-6">
+            <h2 class="text-xl font-bold text-gray-700 mb-6">
+              Performance Summary
+            </h2>
+            <div class="flex justify-between text-gray-600">
+              <div
+                class="flex flex-col justify-center items-center font-bold w-80 space-y-4 text-sm text-[#64748B] bg-[#FFF8EB] py-6 px-10 rounded-xl"
+              >
+                <div class="flex space-x-3">
+                  <img
+                    src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/Star_2_lb3efg.png"
+                    alt="star"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/Star_2_lb3efg.png"
+                    alt="star"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/Star_2_lb3efg.png"
+                    alt="star"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/Star_2_lb3efg.png"
+                    alt="star"
+                  />
+                  <img
+                    src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/Star_4_str7at.png"
+                    alt="star"
+                  />
+                </div>
+                <p>4.5/5.0</p>
+                <p>Average ratings</p>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center font-bold w-80 space-y-4 text-sm text-[#64748B] bg-[#ECF3FF] py-6 px-10 rounded-xl"
+              >
+                <h1 class="text-black-800 font-bold text-2xl">128</h1>
+                <p>Recommendations</p>
+                <p>+24 this month</p>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center font-bold w-80 space-y-4 text-sm text-[#64748B] bg-[#E8F8F3] py-6 px-10 rounded-xl"
+              >
+                <h1 class="text-black-800 font-bold text-2xl">₦840k</h1>
+                <p>Revenue generated</p>
+                <p>+18% growth</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <button
+            class="w-1/2 mt-6 bg-[#00A870] text-sm text-white font-semibold px-6 py-2 rounded-lg hover:bg-white-700 hover:text-[[#00A870] transition"
+          >
+            <a href="/payment.html">Proceed to deal details</a>
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>No reports yet!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff]">
+    <div class="bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex flex-col bg-[#0F766E] text-white justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png"
+              alt="logo"
+              class="w-48 h-12"
+            />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mage_dashboard-3_zpdhaf.png"
+                alt="overview"
+              />
+              <a href="/emptyoverview.html" class="block">Overview</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-02_ogvjty.png"
+                alt="agreement"
+              />
+              <a href="emptyprofile.html" class="block">Partner Discovery</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-add-01_bmq2on.png"
+                alt="user_icon"
+              />
+              <a href="emptypartnership.html" class="block">Partners</a>
+            </div>
+            <div class="flex space-x-3 px-4 py-2 bg-white rounded">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749479/report_ygcaew.png"
+                alt="stickynote"
+              />
+              <a href="emptyreport.html" class="block text-teal-800 font-medium"
+                >Reports</a
+              >
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/proicons_settings_jvr1vh.png"
+                alt="setting_icon"
+              />
+              <a href="setting.html" class="block">Settings</a>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png"
+            alt="logout_icon"
+          />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center p-2 pt-0 mb-6 border-b w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png"
+              alt="vector"
+            />
+            <div class="flex space-x-2">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png"
+                alt="avatar"
+              />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span>Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-[#0f766e] font-bold flex flex-col items-center">
+          <img
+            class="mb-6"
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/Empty4_b3chp8.png"
+            alt="overview-icon"
+          />
+          <h1 class="text-2xl mb-2">No reports available yet</h1>
+          <p class="text-xs">
+            Reports will appear here once guests start redeming deals from your
+            local partners.
+          </p>
+          <button
+            type="submit"
+            class="w-80 max-w-md bg-[#0f766e] text-sm text-white mt-6 hover:bg-white hover:text-[#0f766e] hover:ring-2 hover:ring-teal-500 transition p-2 rounded-lg"
+          >
+            <a href="#">View active partners</a>
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

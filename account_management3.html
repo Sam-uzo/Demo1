@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Offer edit modal</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex max-w-screen max-h-screen items-center justify-center">
+    <div class="flex flex-shrink-1 px-6  flex-col gap-4 justify-center">
+      <br /><br />
+      <span class="pt-6">
+        <header><h1 class="font-bold text-xl">Add New Offering</h1></header>
+      </span>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Offering Image</p></span>
+        <button id="image_input">
+          <span
+            ><img id="offer_image"
+              class="w-5/6 h-40 rounded-xl object-cover"
+              src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768569339/Frame_2147227903_bittdo.png"
+              alt="An input space for images"
+          /></span>
+        </button>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Offering Name</p></span>
+        <span
+          ><input
+            class="border w-10/12 px-2 rounded border-[#14B8A6]"
+            type="text"
+            placeholder=""
+        /></span>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Description</p></span>
+        <span>
+          <textarea
+            name="Description"
+            class="px-2 resize-none border border-[#14B8A6] w-10/12 rounded"
+            cols="80"
+            rows="4"
+            placeholder="Type your business description here"
+            id="textArea"
+          ></textarea>
+        </span>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Offer</p></span>
+        <span
+          ><input
+            class="px-2 border rounded w-10/12 border-[#14B8A6]"
+            type="text"
+        /></span>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Applies to</p></span>
+        <span
+          ><input
+            class="px-2 border w-10/12 rounded border-[#14B8A6]"
+            type="text"
+        /></span>
+      </div>
+
+      <div class="flex flex-col gap-2">
+        <span><p class="text-[#4B5462] text-sm">Category</p></span>
+        <div class="controls__filter rounded border-[#14B8A6]">
+          <input
+            type="text"
+            class="rounded w-10/12 border border-[#14B8A6]"
+            list="categories"
+            name="Categories"
+            placeholder="Choose your category"
+          />
+          <datalist id="categories" aria-label="Available Categories">
+            <option value="Food">Food</option>
+            <option value="Spa">Spa</option>
+            <option value="Tour">Tour</option>
+            <option value=""></option>
+            <option value=""></option>
+          </datalist>
+        </div>
+      </div>
+      <span class="w-28 group pb-8"
+        ><button
+          id="add_offering3"
+          class="group-hover:bg-black p-3 rounded-xl text-sm text-white bg-[#0F766E]"
+        >
+          Add Offering
+        </button></span
+      >
+    </div>
+  </body>
+
+  <script src="account_management3.js"></script>
+</html>

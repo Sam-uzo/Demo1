@@ -1,0 +1,108 @@
+const deals1Button = document.getElementById("deals_button");
+const overview = document.getElementById("Overview");
+const Overview_txt = document.getElementById("Overview_txt");
+
+const dealsButton = document.getElementById("deals_btn");
+const deals_txt = document.getElementById("deals_txt");
+const deals_img = document.getElementById("deals_img");
+const addOfferingButton = document.getElementById("add_offering");
+deals1Button.addEventListener("click", () => {
+  window.location.href = "account_management2.html";
+  dealsButton;
+});
+
+if (document.title == "Account Management1") {
+  overview.classList.add("bg-white");
+  Overview_txt.classList.add("text-black");
+}
+
+
+
+
+
+
+
+const overviewButton = document.getElementById(`overview_btn`);
+const $Button = document.getElementById(``);
+const _Button = document.getElementById(``);
+const eButton = document.getElementById(``);
+const cButton = document.getElementById(``);
+const Button = document.getElementById(``);
+
+if (document.title == "Account Management2") {
+  dealsButton.classList.add("bg-white");
+  deals_txt.classList.add("text-black");
+  deals_img.classList.add("brightness-0");
+}
+
+addOfferingButton.addEventListener("click", () => {
+  window.location.href = "account_management3.html";
+});
+overviewButton.addEventListener("click", () => {
+  window.location.href = `account_management1.html`;
+});
+
+
+
+
+
+
+const addOffer = document.getElementById("add_offering3");
+
+addOffer.addEventListener("click", () => {
+  window.location.href = `account_management4.html`;
+});
+
+const imageInput = document.getElementById("image_input");
+const input = document.createElement(`input`);
+const offerImage = document.getElementById(`offer_image`);
+
+imageInput.addEventListener("click", () => {
+  input.type = "file";
+  input.accept = "image/*";
+  input.onchange = async (e) => {
+    const file = e.target.files[0];
+    const cloudinaryUrl = await sendToCloudinary(file);
+    console.log("Your photo lives at:" + cloudinaryUrl);
+    offerImage.src = cloudinaryUrl;
+  };
+  input.click();
+
+  // // When user picks a photo
+  // photoInput.onchange = async (event) => {
+  //   // 1. Get chosen photo
+  //   const photo = event.target.files[0];
+
+  //   // 2. Send to Cloudinary
+  //   const cloudinaryUrl = await sendToCloudinary(photo);
+
+  //   // 3. Now you have: https://res.cloudinary.com/your-photo.jpg
+  //   console.log("Your photo lives at:", cloudinaryUrl);
+  // };
+
+  async function sendToCloudinary(photo) {
+    const package = new FormData();
+    package.append("file", photo);
+    package.append("upload_preset", "local_connect_preset");
+    const response = await fetch(
+      "https://api.cloudinary.com/v1_1/dk10vcfuz/upload",
+      { method: "POST", body: package },
+    );
+    const data = await response.json();
+    return data.secure_url;
+  }
+});
+
+const cancelButton = document.getElementById("cancel_btn");
+
+cancelButton.addEventListener("click", () => {
+  window.location.href = `account_management5.html`;
+});
+
+
+const canceler = document.getElementById("canceler");
+
+canceler.addEventListener("click", () => {
+  window.location.href = `account_management1.html`;
+});
+

@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reports</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff]">
+    <div class="bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex flex-col bg-[#0F766E] text-white justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png"
+              alt="logo"
+              class="w-48 h-12"
+            />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mage_dashboard-3_zpdhaf.png"
+                alt="overview"
+              />
+              <a href="/overview.html" class="block">Overview</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-02_ogvjty.png"
+                alt="agreement"
+              />
+              <a href="profile.html" class="block">Partner Discovery</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-add-01_bmq2on.png"
+                alt="user_icon"
+              />
+              <a href="approval.html" class="block">Partners</a>
+            </div>
+            <div class="flex space-x-3 px-4 py-2 bg-white rounded">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749479/report_ygcaew.png"
+                alt="stickynote"
+              />
+              <a href="report.html" class="block text-teal-800 font-medium"
+                >Reports</a
+              >
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/proicons_settings_jvr1vh.png"
+                alt="setting_icon"
+              />
+              <a href="setting.html" class="block">Settings</a>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png"
+            alt="logout_icon"
+          />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center p-2 pt-0 mb-6 border-b w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png"
+              alt="vector"
+            />
+            <div class="flex space-x-2">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png"
+                alt="avatar"
+              />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span>Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="font-semibold mb-1">Reports</h2>
+          <p class="text-gray-500 text-sm mb-6">
+            Track partnership performance and revenue analytics
+          </p>
+        </div>
+
+        <div>
+          <!-- Stats Cards -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <!-- Card -->
+            <div
+              class="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between font-bold"
+            >
+              <div class="flex justify-between items-center">
+                <p class="text-gray-500">Active Partnerships</p>
+                <img
+                  src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/f1_fwecjk.png"
+                  alt="agreement"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="mt-2">47</h2>
+                <p class="text-xs text-[#3B82F6]">12 added this month</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between font-bold"
+            >
+              <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm">Total Revenue</p>
+                <img
+                  src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/f2_qvyk0j.png"
+                  alt="agreement"
+                  class="h-10"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="mt-2">₦2.4M</h2>
+                <p class="text-xs text-[#11BA82]">+18.2% from last month</p>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-xl p-6 shadow-sm flex flex-col justify-between font-bold"
+            >
+              <div class="flex justify-between items-center">
+                <p class="text-gray-500 text-sm">Guest Referrals</p>
+                <img
+                  src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/f3_xhlewa.png"
+                  alt=""
+                  class="h-10"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <h2 class="mt-2">1248</h2>
+                <p class="text-xs text-[#800080]">+24.5% from last month</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Performance Chart -->
+          <div class="bg-white rounded-xl p-6 shadow-sm mb-10">
+            <div
+              class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-6"
+            >
+              <div>
+                <h2 class="font-bold">Performance Chart</h2>
+                <p class="text-xs text-gray-500">
+                  Track partnership performance and revenue analytics
+                </p>
+              </div>
+
+              <div class="flex gap-3">
+                <select
+                  class="border rounded-lg px-4 py-2 text-xs text-gray-500 bg-[#F1F5F9]"
+                >
+                  <option>January</option>
+                </select>
+                <select
+                  class="border rounded-lg px-4 py-2 text-gray-500 text-xs bg-[#F1F5F9]"
+                >
+                  <option>2025</option>
+                </select>
+                <button
+                  class="bg-teal-600 text-white px-4 py-2 rounded-lg text-xs"
+                >
+                  <div class="flex gap-2">
+                    <img
+                      src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/download_qrybff.png"
+                      alt=""
+                    />
+                    <span>Export Activity Log</span>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Chart Placeholder -->
+            <!-- Live chart goes here -->
+            <div
+              class="h-72 bg-gray-50 rounded-lg flex items-center justify-center text-gray-400 text-sm"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749475/chart_onejy0.png"
+                alt=""
+                class="h-full"
+              />
+            </div>
+
+            <!-- Legend -->
+            <div class="flex justify-center gap-6 mt-4 text-sm">
+              <div class="flex gap-3">
+                <img
+                  src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/distribute-horizontal-center_1_kamhdq.png"
+                  alt=""
+                />
+                <p class="flex items-center gap-2 text-[#3B82F6] font-medium">
+                  Referral revenue
+                </p>
+              </div>
+              <div class="flex gap-3">
+                <img
+                  src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749475/distribute-horizontal-center_wfbeej.png"
+                  alt=""
+                />
+                <p class="flex items-center gap-2 text-[#800080] font-medium">
+                  Partner performance
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Top Partners Table -->
+          <div class="bg-white rounded-xl p-6 shadow-sm">
+            <h2 class="font-bold mb-1">Top Performance Partners</h2>
+            <p class="text-xs font-semibold text-gray-500 mb-8">
+              Highest revenue generating partners this period
+            </p>
+
+            <div class="overflow-x-auto">
+              <table class="w-full text-sm text-left text-gray-500">
+                <thead>
+                  <tr class="text-left text-gray-500 border-b">
+                    <th class="pb-3">Partners</th>
+                    <th class="pb-3">Revenue</th>
+                    <th class="pb-3">Location</th>
+                    <th class="pb-3">Status</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y">
+                  <tr class="h-14 font-semibold">
+                    <td class="font-bold">Sunview Hotel</td>
+                    <td>₦21.4M</td>
+                    <td>Lagos, NG</td>
+                    <td>
+                      <span
+                        class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                        >Active</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="h-14 font-semibold">
+                    <td class="font-bold">Coastline Suites</td>
+                    <td>₦5.1M</td>
+                    <td>Accra, GH</td>
+                    <td>
+                      <span
+                        class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                        >Active</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="h-14 font-semibold">
+                    <td class="font-bold">Grand Plaza Hotel</td>
+                    <td>₦10.0M</td>
+                    <td>Capetown, CP</td>
+                    <td>
+                      <span
+                        class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                        >Active</span
+                      >
+                    </td>
+                  </tr>
+
+                  <tr class="h-14 font-semibold">
+                    <td class="font-bold">Lakeside Inn</td>
+                    <td>₦40.5M</td>
+                    <td>Nairobi, KE</td>
+                    <td>
+                      <span
+                        class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                        >Active</span
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

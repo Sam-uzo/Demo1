@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Approval</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+   <body class="bg-[#ffffff]">
+    <div class=" bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex flex-col bg-[#0F766E] text-white justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png" alt="logo" class="w-48 h-12" />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mage_dashboard-3_zpdhaf.png" alt="overview" />
+              <a href="/overview.html" class="block">Overview</a>
+            </div>
+            <div class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded">
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-02_ogvjty.png" alt="agreement" />
+              <a href="profile.html" class="block"
+                >Partner Discovery</a
+              >
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-2_atgipa.png" alt="user_icon" />
+              <a href="approval.html" class="block text-teal-800 font-medium">Partners</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/sticky-note-03_a0ax5a.png" alt="stickynote" />
+              <a href="report.html" class="block">Reports</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/proicons_settings_jvr1vh.png" alt="setting_icon" />
+              <a href="setting.html" class="block">Settings</a>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png" alt="logout_icon" />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+       <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center p-2 pt-0 mb-6 border-b w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png" alt="vector" />
+            <div class="flex space-x-2">
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png" alt="avatar" />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span>Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-md p-4 text-sm text-gray-500 shadow-md mb-4"
+        >
+         <p><a href="/profile.html">Partner Discovery </a> <span class="mx-2">›</span>
+          <span class="text-gray-800 font-medium">Partner profile</span></p>
+        </div>
+
+         <!-- Header -->
+      <div class="my-6">
+        <h2 class="font-bold mb-2">Business Details</h2>
+        <p class=" text-xs text-gray-500 font-semibold">Information about the datails carried out with partner</p>
+    
+      </div>
+
+      <!-- Content Grid -->
+       <div class="bg-white rounded-lg shadow-md p-8">
+        <div class="mb-4">
+            <h2 class="font-bold mb-2">Partnership Type</h2>
+            <p class="text-xs text-gray-500 font-semibold"> Referral-based business partnership
+                </p>
+       </div>
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- Left Column -->
+        <div class="space-y-6">
+          <div>
+            <h2 class="font-bold">Commission & Payment</h2>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Commission Model:
+              <span class="text-xs text-gray-500 font-semibold">
+                20% per completed booking</span
+              >
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Commission Rate:
+              <span class="text-xs text-gray-500 font-semibold">
+                15% per completed booking</span
+              >
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Payment Trigger:
+              <span class="text-xs text-gray-500 font-semibold">
+                After service is successfully delivered</span
+              >
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Settlement Cycle:
+              <span class="text-xs text-gray-500 font-semibold">
+                Monthly payouts</span
+              >
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-bold">Scope of Services</h2>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Service included:
+              <span class="text-xs text-gray-500 font-semibold">
+                Spa treatments, wellness sessions</span
+              >
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-2">
+              Service Area:
+              <span class="text-xs text-gray-500 font-semibold"> Lagos</span>
+            </p>
+          </div>
+
+          <div>
+            <h2 class="font-bold">Review & Duration</h2>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Review Frequency:
+              <span class="text-xs text-gray-500 font-semibold"> Monthly</span>
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Contract Duration:
+              <span class="text-xs text-gray-500 font-semibold"> 3 years</span>
+            </p>
+            <p class="text-xs text-gray-500 font-bold py-1">
+              Termination Clause:
+              <span class="text-xs text-gray-500 font-semibold">
+                Either party may terminate with prior notice</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold mb-2">Partner Commitments</h3>
+            <ul class="list-disc list-inside text-xs text-gray-500 font-semibold space-y-2">
+              <li>Deliver services as described in the proposal</li>
+              <li>Maintain agreed service quality standards</li>
+              <li>Honor all hotel-generated referrals</li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 class="font-bold mb-2">Hotel Rights</h3>
+            <ul class="list-disc list-inside text-xs text-gray-500 font-semibold space-y-2">
+              <li>Review and approve or reject deal terms</li>
+              <li>Monitor performance and guest feedback</li>
+              <li>Suspend or terminate partnership if standards are not met</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="mt-8">
+        <button
+          class="w-1/2 bg-[#FF383C] hover:ring-2 hover:ring-[#FE6244] text-sm text-white py-4 px-6 rounded-lg font-semibold"
+        >
+          Cancel deals
+        </button>
+      </div>
+       </div>
+  </body>
+</html>

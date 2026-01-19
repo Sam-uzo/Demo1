@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#fafefd] flex justify-center items-center p-4 min-h-screen">
+    <div class="m-h-screen flex flex-col rounded-xl shadow-lg gap-0 ">
+      <div class="relative bg-[#CCFBF1] flex flex-col items-center gap-8 py-4">
+        <!-- close button -->
+        <div>
+          <a href="/login.html"><img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749475/cancel-01_kudn9f.png"
+            alt="close-button"
+            class="absolute top-4 right-4 w-5 h-5 flex items-center justify-center rounded-full bg-teal-50 text-gray-700 hover:bg-teal-100"
+          /></a>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Logo2_exly7f.png" alt="logo" class="h-10" />
+          <p class="text-[#0F766E] font-bold mt-5">Create your business account</p>
+          <p class="text-gray-500 font-semibold text-xs">Lets get you started! It takes less than 2 minutes</p>
+        </div>
+        <div
+          class="text-gray-500 font-semibold text-xs flex justify-around gap-10"
+        >
+          <p class="text-[#0F766E]">New Account</p>
+          <p>Log In</p>
+        </div>
+      </div>
+      <div
+        class="bg-[ffffff] w-full max-w-lg flex flex-col justify-center items-center p-10"
+      >
+          <form action="">
+            <label
+              for="email"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Hotel Name</label
+            >
+            <input
+              type="text"
+              placeholder="Hotel Name"
+              class="w-96 border text-sm font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <label
+              for="email"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >business Email</label
+            >
+            <input
+              type="email"
+              placeholder="hotelemail@gmail.com"
+              class="w-96 border text-sm font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <label
+              for="tel"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Contact Information</label
+            >
+            <input
+              type="tel"
+              placeholder="+234********"
+              class="w-96 border text-sm font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <label
+              for="text"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Location</label
+            >
+            <input
+              type="text"
+              placeholder="Hotel Location"
+              class="w-96 border  text-sm rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <label
+              for="text"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Peak Days</label
+            >
+            <input
+              type="text"
+              placeholder="Peak Days"
+              class="w-96 border text-sm font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <label
+              for="category"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Category</label
+            >
+            <select  class="w-96 border text-sm text-gray-500 rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+              name="category" id="category">
+              <option value=""></option>
+            <option value="Restaurant/Cafe">Restaurant/Cafe</option>
+            <option value="Tours & Experience">Tours & Experience</option>
+            <option value="Shopping & Artisan">Shopping & Artisan</option>
+            <option value="Wellness & Beauty">Wellness & Beauty</option>
+            <option value="Transport & Convinience">Transport & Convinience</option>
+            <option value="Others">Others</option>
+            </select>
+             
+          <label
+              for="password"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="**********"
+              class="w-96 border  text-sm rounded-lg px-4 py-3 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+            <p class="text-[10px] text-gray-500 font-semibold mb-2">Must be at least 8 characters</p>
+            <label
+              for="password"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-3"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              placeholder="**********"
+              class="w-96 border  text-sm rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </form>
+        </div>
+          <div class="px-10">
+            
+            <p class="text-xs"><input type="checkbox"> I agree to the <a href="#" class="text-blue-600 font-semibold"> Terms of Service</a> and <a href="#" class="text-blue-600 font-semibold" >Privacy Policy</a></p>
+            <p class="text-[10px] text-[#14B8A6] font-semibold">By creating an account, you agree to LocalConnect platform guidelines.</p>
+          </div>
+        <div class="flex flex-col items-center gap-2">
+          <button
+            id="anchor-btn"
+            type="submit"
+            class="w-80 max-w-md bg-[#0f766e] text-white hover:bg-white hover:text-[#0f766e] hover:ring-2 hover:ring-teal-500 transition p-2 rounded-lg mt-10"
+          >
+            <a  href="account_approval.html">Create Account</a>
+
+          </button>
+          <span class="text-[#0f766e]">or</span>
+          <button  type="submit"
+            class="w-80 max-w-md text-[#0f766e] font-semibold hover:bg-[#0f766e] hover:text-white  transition p-2 rounded-lg"
+           ><a href="www.account.google.com">Continue with Google</a> </button>
+        </div>
+        <div class="flex flex-col items-center gap-3 text-sm text-gray-600 mt-5">
+          <p>Already have an account?</p>
+          <a href="login.html" class="underline text-[#0f766e] text-xs mb-10"
+            >Log In</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="create.js"></script>
+  </body>
+</html>

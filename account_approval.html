@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="max-w-screen h-screen flex items-center justify-center">
+    <div id="approved_page" class="bg-[#fffff] flex flex-shrink-1 flex-col w-1/2 h-1/2 shadow  shadow-black border-2 border-[#fffff] p-6 px-12 gap-8 items-center justify-center">
+
+      <span><h1 class="text-[#10B981] font-medium text-3xl">Account Created Successfully!</h1></span>
+      <div class="flex flex-col justify-end">
+          <span>
+            <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768846677/ph_handshake-duotone_mjsigy.png" alt="A bowl of spagetti" />
+          </span>
+      </div>
+    </div>
+
+    <section id="login_section" class=" hidden bg-[#fafefd] flex justify-center items-center px-4 min-h-screen">
+      <div class="m-h-screen flex flex-col rounded-xl shadow-lg gap-0">
+      <div class="relative bg-[#CCFBF1] flex flex-col items-center gap-5 py-4">
+        <!-- close button -->
+        <div>
+        <a href="/create.html">  <img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749475/cancel-01_kudn9f.png"
+            alt="close-button"
+            class="absolute top-4 right-4 w-5 h-5 flex items-center justify-center rounded-full bg-teal-50 text-gray-700 hover:bg-teal-100"
+          /></a>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Logo2_exly7f.png" alt="logo" class="h-10" />
+          <p class="text-[#0F766E] font-bold">Log In</p>
+        </div>
+        <div
+          class="text-gray-500 font-semibold text-xs flex justify-around gap-10"
+        >
+          <p>New Account</p>
+        <p class="text-[#0F766E]">Log In</p>
+        </div>
+      </div>
+      <div
+        class="bg-[ffffff] w-full max-w-lg flex flex-col justify-center items-center p-6"
+      >
+          <form action="">
+            <label
+              for="email"
+              class="block text-sm text-gray-500 font-semibold mb-1 mt-10"
+              >Hotel Email</label
+            >
+            <input
+              type="email"
+              placeholder="ekohotel1@gmail.com"
+              class="w-96 border font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          <label
+              for="password"
+              class="block text-sm text-gray-500 font-semibold mb-1"
+              >Password</label
+            >
+            <input
+              type="password"
+              placeholder="**********"
+              class="w-96 border font-light rounded-lg px-4 py-3 mb-2 hover:ring-2 hover:ring-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-500"
+            />
+          </form>
+          <a href="password.html" class="text-red-600 text-xs">Forgot Password?</a>
+        </div>
+        <div class="flex flex-col items-center">
+          <button
+            type="submit"
+            class="w-80 max-w-md bg-[#0f766e] text-white hover:bg-white hover:text-[#0f766e] hover:ring-2 hover:ring-teal-500 transition p-2 rounded-lg mt-10"
+          >
+            <a href="#">Log In</a>
+          </button>
+        </div>
+        <div class="flex flex-col items-center gap-3 text-sm text-gray-600 mt-5">
+          <p>Don't have an account?</p>
+          <a href="create.html" class="underline text-[#0f766e] mb-10"
+            >Create an Account</a
+          >
+        </div>
+      </div>
+    </div>
+    </section>
+    <script src="create.js"></script>
+  </body>
+</html>

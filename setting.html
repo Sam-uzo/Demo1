@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <div class="bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex w-64 bg-[#0F766E] text-white flex-col justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png" alt="logo" />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/mage_dashboard-3_zpdhaf.png" alt="overview" />
+              <a href="/overview.html" class="block">Overview</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-02_ogvjty.png" alt="agreement" />
+              <a href="profile.html" class="block">Partner Discovery</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-add-01_bmq2on.png" alt="user_icon" />
+              <a href="approval.html" class="block">Partners</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/sticky-note-03_a0ax5a.png" alt="stickynote" />
+              <a href="report.html" class="block">Reports</a>
+            </div>
+            <div class="flex space-x-3 px-4 py-2 bg-white rounded">
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749509/settings_2_kam6lf.png" alt="setting" />
+              <a href="setting.html" class="block text-teal-800 font-medium"
+                >Settings</a
+              >
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png" alt="logout_icon" />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center border-b p-2 pt-0 mb-6 w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png" alt="vector" />
+            <div class="flex space-x-2">
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png" alt="avatar" />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span class="text-gray-500">Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h2 class="font-semibold mb-1">Settings</h2>
+          <p class="text-gray-500 mb-6">
+            Manage your account settings and preference
+          </p>
+        </div>
+        <!-- Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <!-- Account Settings -->
+          <section class="lg:col-span-2 bg-white rounded-xl p-2 shadow">
+            <div class="flex space-x-2">
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/Customer_vbo2li.png" alt="contact_icon" class="h-10" />
+              <h2 class="text-gray-500 font-semibold mt-2 mb-4">
+                Account Settings
+              </h2>
+            </div>
+
+            <div class="flex items-center gap-4 mt-6 mb-6">
+              <div
+                class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white"
+              >
+                <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/contact_frame_re8u98.png" alt="contact_frame" />
+              </div>
+              <div class="flex flex-col gap-2">
+                <p class="text-gray-500 font-semibold ml-2">Profile Picture</p>
+                <button
+                  class="bg-[#0F766E] text-white px-10 py-2 rounded-lg text-sm"
+                >
+                  Upload New Picture
+                </button>
+              </div>
+            </div>
+
+            <div class="space-y-4">
+              <div>
+                <label class="block text-gray-500 font-semibold text-sm mb-1"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  placeholder="James Ayomide"
+                  class="w-full border font-light rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-500 font-semibold text-sm mb-1"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  placeholder="James@localconnect"
+                  class="w-full border font-light rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                />
+              </div>
+
+              <div>
+                <label class="block text-gray-500 font-semibold text-sm mb-1"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  placeholder="+234 916 406 2990"
+                  class="w-full border font-light rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500"
+                />
+              </div>
+            </div>
+          </section>
+
+          <!-- System Info -->
+          <section class="text-gray-500 space-y-6">
+            <div class="bg-white rounded-xl p-6 shadow">
+              <h2 class="font-semibold mb-8">System Info</h2>
+              <ul class="text-sm space-y-10">
+                <li class="flex justify-between">
+                  <span>Version</span><span>2.4.1</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Last Updated</span><span>Jan 1, 2026</span>
+                </li>
+                <li class="flex justify-between">
+                  <span>Account Type</span><span>Staff Admin</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-[#FFE5E5D9] rounded-xl py-4 px-10">
+              <div class="flex justify-start items-center gap-2">
+                <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Trash_xgewj9.png" alt="Trash_icon" class="h-6" />
+                <h2 class="text-[#AA3131] text-sm mb-2">Danger Zone</h2>
+              </div>
+              <p class="text-sm text-[#AA3131] mb-4">
+                Once you delete your account, there is no going back. Please be
+                certain.
+              </p>
+              <button class="bg-[#FD0A0A] text-white w-full py-2 rounded-lg">
+                Delete
+              </button>
+            </div>
+          </section>
+        </div>
+        <!-- Notifications -->
+        <section class="bg-white text-gray-500 p-6 rounded-xl shadow mt-6">
+          <div class="flex space-x-2">
+            <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png" alt="" />
+            <h2 class="font-semibold text-sm mt-2 mb-">
+              Notification Preferences
+            </h2>
+          </div>
+
+          <div class="space-y-4 text-sm">
+            <div class="flex justify-between items-center">
+              <span class="font-bold mt-2">New Partnership Requests</span>
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Toggle_kpz8dg.png" alt="toggle" class="h-4" />
+            </div>
+            <hr class="border-b-2" />
+            <div class="flex justify-between items-center">
+              <p>
+                <span class="font-bold">Referral Completions </span><br />
+                Recieve updates when referrals are completed
+              </p>
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Toggle_kpz8dg.png" alt="toggle" class="h-4" />
+            </div>
+            <hr class="border-b-2" />
+            <div class="flex justify-between items-center">
+              <p>
+                <span class="font-bold">Guest Recommendations</span> <br />
+                Alerts when guests need recommendations
+              </p>
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Toggle_kpz8dg.png" alt="toggle" class="h-4" />
+            </div>
+            <hr class="border-b-2" />
+            <div class="flex justify-between items-center">
+              <p>
+                <span class="font-bold">Weekly Reports</span><br />
+                Recieve weekly partnership performance reports
+              </p>
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Toggle2_vm1wze.png" alt="toggle" class="h-4" />
+            </div>
+            <hr class="border-b-2" />
+            <div class="flex justify-between items-center">
+              <p>
+                <span class="font-bold">System Updates</span><br />Important
+                platform updates and announcements
+              </p>
+              <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/Toggle2_vm1wze.png" alt="toggle" class="h-4" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Security -->
+        <section
+          class="bg-white text-gray-500 rounded-xl px-2 py-6 shadow mt-6"
+        >
+          <h2 class="font-semibold mb-8">Security</h2>
+
+          <div class="text-sm font-bold">
+            <label for="password" class="p-2">Current Password</label>
+            <input
+              type="password"
+              placeholder="**********"
+              required
+              class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500 hover:ring-2 hover:ring-teal-500"
+            />
+            <label for="password" class="p-2">New Password</label>
+            <input
+              type="password"
+              placeholder="**********"
+              required
+              class="w-full border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-teal-500 hover:ring-2 hover:ring-teal-500"
+            />
+
+            <div
+              class="bg-teal-700 text-white px-4 py-2 rounded-lg flex justify-center items-center mt-10 w-3/4"
+            >
+              <button class="flex space-x-4">
+                <img src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/Password_Key_jqbfje.png" alt="key" class="h-10" />
+                <span> Change Password</span>
+              </button>
+          </div>
+        </section>
+        <!-- Footer Buttons -->
+        <div class="flex justify-end gap-4 mt-6">
+          <button
+            class="bg-[#F97316] text-xs font-bold text-white px-6 py-2 rounded-lg w-40"
+          >
+            Cancel
+          </button>
+          <button
+            class="bg-[#0F766E] text-white text-xs font-bold px-6 py-2 rounded-lg w-40"
+          >
+            Save Changes
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

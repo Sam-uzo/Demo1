@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account Management2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex min-h-[200dvh] flex-shrink-1 max-w-screen">
+    <div class="bg-[#0F766E] w-1/5 flex-nowrap flex  flex-col py-4 pt-12 justify-between h-screen">
+      <div class="flex flex-col ">
+        <div class="flex pb-12 px-6 items-center">
+          <div>
+            <img
+              src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767785450/Vector_wdyekm.png"
+              alt="A white location pin icon with a small heart shape in the center, set against a simple background."
+            />
+          </div>
+          <div class="px-3">
+            <h1 class="text-[#FFFFFF]">
+              <span class="font-medium">Local</span
+              ><span class="font-normal">Connect</span>
+            </h1>
+          </div>
+        </div>
+
+        <button id="overview_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728571/mage_dashboard-3_k3dkga.png"
+                alt="A simple icon representing a stack of three horizontal layers or files, depicted in a light gray color, set against a white background."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0"
+              />
+            </div>
+            <div  class="px-3 text-sm group-hover:text-black text-[#D1D5DB]">Overview</div>
+          </div>
+        </button>
+
+        <button id="business_profile_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728569/mage_dashboard-3_1_g1cdtu.png"
+                alt="A white price tag icon with a hole at the top right corner. The tag is displayed on a light background, symbolizing pricing or labeling."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0"
+              />
+            </div>
+            <div  class="px-3 group-hover:text-black text-sm text-[#D1D5DB]">Business Profile</div>
+          </div>
+        </button>
+
+        <button  id="deals_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                id="deals_img"
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728569/mage_dashboard-3_1_g1cdtu.png"
+                alt="A white price tag icon with a hole at the top right corner. The tag is displayed on a light background, symbolizing pricing or labeling."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0"
+              />
+            </div>
+            <div id="deals_txt" class="px-3 group-hover:text-black text-sm text-[#D1D5DB]">Deals & Offerings</div>
+          </div>
+        </button>
+
+        <button id="hotel_partner_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728564/fluent_people-communication-28-filled_gcsqwg.png"
+                alt="A simple icon representing two stylized human figures, one sitting and one standing, in a gray color on a black background."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0"
+              />
+            </div>
+            <div  class="px-3 group-hover:text-black text-sm text-[#D1D5DB]">Hotel Partners</div>
+          </div>
+        </button>
+
+        <button id="booking_and_commission_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768407932/mdi_partnership-outline_yofsru.png"
+                alt="A simple black outline of a chain link icon, commonly representing hyperlinks or connections. The design is minimalist with smooth curves."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0  "
+              />
+            </div>
+            <div class="px-2 group-hover:text-black text-sm text-[#D1D5DB]">Bookings & Commission</div>
+          </div>
+        </button>
+
+        <button id="settings_btn" class="px-4 group hover:bg-white  rounded-xl">
+          <div class="flex py-3 items-center">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728572/proicons_settings_xacygt.png"
+                alt="An icon of a gear, often used to represent settings or configuration options in applications."
+                class="filter grayscale group-hover:grayscale-0 
+                  group-hover:brightness-0"
+              />
+            </div>
+            <div class="px-3 group-hover:text-black text-sm text-[#D1D5DB]">Settings</div>
+          </div>
+                </div>
+        </button>
+
+      
+        <button id="logout_btn" class=" group hover:bg-white  rounded-xl">
+          <div class="flex items-center py-2  pl-4">
+            <div>
+              <img
+                src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728564/Frame_1_a9iilg.png"
+                alt="A circular icon featuring an arrow pointing to the right, inside a rounded square."
+              />
+            </div>
+            <div class="px-3 text-sm  group-hover:text-black text-[#D1D5DB]"><p>Logout</p></div>
+          </div>
+        </button>
+
+    </div>
+
+    <div class="p-4 w-full">
+      <header class="flex justify-between items-center px-6 max-w-screen">
+        <div>
+          <p class="text-[#4B5563] font-medium">Wednesday,December ,2025</p>
+        </div>
+        <div><p class="font-medium">PALM & PEPPER KITCHEN</p></div>
+        <div class="flex gap-3">
+          <div>
+            <img
+              src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767728565/Frame_ntypuv.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1767814109/image_1_iimumo.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <p class="sm font-medium">Ebun Chioma</p>
+            <p class="text-[#4B5563] text-xs">Admin</p>
+          </div>
+        </div>
+      </header>
+
+      <main class="flex flex-col gap-10 p-8">
+       <div class="flex flex-col gap-5">
+            <div class="flex justify-between items-center">
+                <span><h1 class="text-xl font-medium">My Offerings</h1></span>
+                <span class=""><button id="add_offering" class="py-2 px-3 text-white bg-[#0F766E] rounded-xl">Add Offerings</button></span>
+            </div>
+            <span><p class="font-medium">Current Offerings</p></span>
+       </div>
+       <div class="flex flex-col gap-5">
+
+        <div class="border-2 border-[#FED7AA] flex flex-col gap-3 p-4 bg-[#FFFDFA] rounded-xl">
+            <span><p class="font-medium">Chef's Signature Offer</p></span>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <span><p>Offer: 20% off first local meal</p></span>
+                    <span>-022345</span>
+                </div>
+                <div class="flex gap-2">
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Vector_3_ilyxgq.png" alt="A Gallery icon">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Group_z80woo.png" alt="A pen writing on paper">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410388/Group_1_t2zlx0.png" alt="A delete icon">
+                    </span>
+                </div>
+            </div>
+            <span><p class="text-xs">One-time redemption</p></span>
+        </div>
+
+        <div class="border-2 border-[#FED7AA] flex flex-col gap-3 p-4 bg-[#FFFDFA] rounded-xl">
+            <span><p class="font-medium">Hotel Guest Special</p></span>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <span><p>Offer: Complimentary drink with any meal</p></span>
+                    <span>-000150</span>
+                </div>
+                <div class="flex gap-2">
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Vector_3_ilyxgq.png" alt="A Gallery icon">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Group_z80woo.png" alt="A pen writing on paper">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410388/Group_1_t2zlx0.png" alt="A delete icon">
+                    </span>
+                </div>
+            </div>
+            <div>
+                <span>
+                    <p class="text-xs">Applies to: Launch & Dinner</p>
+                </span>
+                <span>
+                    <p class="text-xs">Redemption: Show hotel confirmation</p>
+                </span>
+            </div>
+        </div>
+
+        <div class="border-2 border-[#FED7AA] flex flex-col gap-3 p-4 bg-[#FFFDFA] rounded-xl">
+            <span><p class="font-medium">Family & Friend Offer</p></span>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <span><p>Offer: Kids eat free with two adult meals</p></span>
+                    <span>-028670</span>
+                </div>
+                <div class="flex gap-2">
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Vector_3_ilyxgq.png" alt="A Gallery icon">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Group_z80woo.png" alt="A pen writing on paper">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410388/Group_1_t2zlx0.png" alt="A delete icon">
+                    </span>
+                </div>
+            </div>
+            <span><p class="text-xs">One-time redemption</p></span>
+        </div>
+
+        <div class="border-2 border-[#FED7AA] flex flex-col gap-3 p-4 bg-[#FFFDFA] rounded-xl">
+            <span><p class="font-medium">Late-Night Local Bite</p></span>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <span><p>Offer: 15% off meals after 7pm</p></span>
+                    <span>-018670</span>
+                </div>
+                <div class="flex gap-2">
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Vector_3_ilyxgq.png" alt="A Gallery icon">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Group_z80woo.png" alt="A pen writing on paper">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410388/Group_1_t2zlx0.png" alt="A delete icon">
+                    </span>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="border-2 border-[#FED7AA] flex flex-col gap-3 p-4 bg-[#FFFDFA] rounded-xl">
+            <span><p class="font-medium">Taste of the City Deal</p></span>
+            <div class="flex justify-between">
+                <div class="flex gap-3">
+                    <span><p>Offer:10% signature local dishes</p></span>
+                    <span>-028390</span>
+                </div>
+                <div class="flex gap-2">
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Vector_3_ilyxgq.png" alt="A Gallery icon">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410385/Group_z80woo.png" alt="A pen writing on paper">
+                    </span>
+                    <span>
+                        <img src="https://res.cloudinary.com/dk10vcfuz/image/upload/v1768410388/Group_1_t2zlx0.png" alt="A delete icon">
+                    </span>
+                </div>
+            </div>
+            <span><p class="text-xs">First visit only</p></span>
+        </div>
+
+       </div>
+
+      </main>
+    </div>
+
+    <script src="account_management2.js"></script>
+  </body>
+</html>

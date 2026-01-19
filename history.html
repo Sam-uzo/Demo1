@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Partner Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-[#ffffff]">
+    <div class="bg-[#fafafa] flex min-h-screen">
+      <!-- Sidebar -->
+      <aside
+        class="hidden md:flex flex-col bg-[#0F766E] text-white justify-between"
+      >
+        <div>
+          <div class="p-6">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/logo_1_tpnbvx.png"
+              alt="logo"
+              class="w-48 h-12"
+            />
+          </div>
+
+          <nav class="mt-6 space-y-2 px-4 text-sm">
+            <div class="flex space-x-3 px-4 py-2 bg-white rounded">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/Overview2_dyccta.png"
+                alt="overview"
+              />
+              <a href="overview.html" class="block text-teal-800 font-medium"
+                >Overview</a
+              >
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/agreement-02_ogvjty.png"
+                alt="agreement"
+              />
+              <a href="profile.html" class="block">Partner Discovery</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749481/user-add-01_bmq2on.png"
+                alt="user_icon"
+              />
+              <a href="approval.html" class="block">Partners</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749479/Report2_bswurc.png"
+                alt="stickynote"
+              />
+              <a href="report.html" class="block">Reports</a>
+            </div>
+            <div
+              class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+            >
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749478/proicons_settings_jvr1vh.png"
+                alt="setting_icon"
+              />
+              <a href="setting.html" class="block">Settings</a>
+            </div>
+          </nav>
+        </div>
+
+        <div
+          class="flex space-x-3 px-4 py-2 hover:text-[#0F766E] hover:bg-white rounded"
+        >
+          <img
+            src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749476/exit_cicqs1.png"
+            alt="logout_icon"
+          />
+          <button class="block"><a href="/login.html">Logout</a></button>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="flex-1 p-4 md:p-8">
+        <!-- Top Bar -->
+        <div
+          class="flex justify-between items-center p-2 pt-0 mb-6 border-b w-full"
+        >
+          <p class="text-sm text-gray-500">Wednesday, December, 2025</p>
+          <div class="flex items-center gap-3">
+            <img
+              src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749477/Frame_ynwkb5.png"
+              alt="vector"
+            />
+            <div class="flex space-x-2">
+              <img
+                src="https://res.cloudinary.com/dln6cqwtc/image/upload/v1768749474/Avatar_iaq6za.png"
+                alt="avatar"
+              />
+              <p class="text-sm font-medium">
+                James Ayomide <br />
+                <span>Staff</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white rounded-md p-4 text-sm text-gray-500 shadow-md mb-4"
+        >
+          <p>
+            <a href="/overview.html">Overview</a> <span class="mx-2">›</span>
+            <span class="text-gray-800 font-medium">History</span>
+          </p>
+        </div>
+
+        <div class="bg-[#fafafa] rounded-xl shadow p-6 max-w-6xl mx-auto">
+          <div class="mb-2">
+            <h2 class="text-xl font-bold text-gray-700">History</h2>
+            <p class="text-gray-500 text-sm mb-6">
+              All activities carried out on all hotels
+            </p>
+          </div>
+
+          <!-- Search & Filter -->
+          <div class="flex flex-col md:flex-row md:items-center gap-4 mb-6">
+            <div class="flex-1 relative">
+              <input
+                type="text"
+                placeholder="Search hotels name..."
+                class="w-full pl-10 pr-4 py-3 bg-gray-100 rounded-lg text-sm outline-none focus:ring-2 focus:ring-blue-500"
+              />
+            </div>
+
+            <button
+              class="flex items-center gap-2 px-5 py-3 border rounded-lg text-sm text-gray-700 hover:bg-gray-50"
+            >
+              ⚙ Filters
+            </button>
+          </div>
+
+          <!-- Table -->
+          <div class="overflow-x-auto">
+            <table class="w-full text-xs">
+              <thead>
+                <tr class="text-left text-gray-500 border-b">
+                  <th class="pb-4">Partners</th>
+                  <th class="pb-4">Location</th>
+                  <th class="pb-4">Commission</th>
+                  <th class="pb-4">Amount</th>
+                  <th class="pb-4">Date</th>
+                  <th class="pb-4">Status</th>
+                  <th class="pb-4">Action</th>
+                </tr>
+              </thead>
+
+              <tbody class="divide-y">
+                <!-- Row -->
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Sunview Hotel</td>
+                  <td>Lagos, NG</td>
+                  <td>15%</td>
+                  <td>#45,000</td>
+                  <td>Today, 10:42 AM</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                      >Active</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Coastline Suites</td>
+                  <td>Lagos, NG</td>
+                  <td>10%</td>
+                  <td>#18,500</td>
+                  <td>Yesterday</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-[#FFF8EB] text-[#EEA23E] rounded-lg text-xs"
+                      >Pending</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Grand plaza bites</td>
+                  <td>Lagos, NG</td>
+                  <td>20%</td>
+                  <td>#20,000</td>
+                  <td>2 dys ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                      >Active</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-[#DC262680] text-[#DC2626] rounded-lg text-xs"
+                      >Inactive</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                      >Active</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-[#DC262680] text-[#DC2626] rounded-lg text-xs"
+                      >Inactive</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                      >Active</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-[#FFF8EB] text-[#EEA23E] rounded-lg text-xs"
+                      >Pending</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+
+                <tr class="h-14 font-medium">
+                  <td class="font-bold">Spalake side</td>
+                  <td>Lagos, NG</td>
+                  <td>5%</td>
+                  <td>#5000</td>
+                  <td>3 days ago</td>
+                  <td>
+                    <span
+                      class="px-3 py-1 bg-green-100 text-green-700 rounded-lg text-xs"
+                      >Active</span
+                    >
+                  </td>
+                  <td>
+                    <button
+                      class="flex items-center bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full text-sm"
+                    >
+                      View
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

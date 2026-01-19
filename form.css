@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*colors*/
+  --header-bg: #ccfbf1;
+  --green-text: #0f766e;
+  --gray-text: #94a3b8;
+  /*padding*/
+  --header-padding: 2.5rem;
+}
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, sans-serif;
+}
+
+body {
+  background: var(--green-text);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-content {
+  padding: 2rem;
+  background-color: var(--header-bg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.intro h3 {
+  color: var(--gray-text);
+}
+
+main {
+  background-color: white;
+  padding: 40px;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.container {
+  border: 2px solid var(--header-bg);
+  border-radius: 1.5rem;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo */
+.logo-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo-header h1 {
+  color: var(--green-text);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  background: #f7fafc;
+  border-radius: 12px;
+  padding: 3px 14px;
+  margin-top: 1.5rem;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #4a5568;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+  background: white;
+  color: var(--green-text);
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Forms */
+.auth-form {
+  display: none;
+}
+
+.auth-form.active {
+  display: block;
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.auth-form h2 {
+  color: #2d3748;
+  font-size: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.subtitle {
+  color: #718096;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* Input Groups */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  color: #4a5568;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.input-group input,
+.input-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+  outline: none;
+  border-color: var(--green-text);
+  box-shadow: 0 0 0 3px rgba(90, 103, 216, 0.1);
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+  padding-right: 45px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #a0aec0;
+  cursor: pointer;
+}
+
+/* Checkbox */
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 25px 0;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.check {
+  display: flex;
+}
+
+/* 
+.checkbox-group span {
+  color: var(--header-bg);
+} */
+
+.checkbox-group input[type="checkbox"] {
+  margin-right: 12px;
+  margin-top: 4px;
+  accent-color: var(--green-text);
+}
+
+.checkbox-group label {
+  color: #4a5568;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.checkbox-group label span {
+  display: block;
+  color: #718096;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Buttons */
+.primary-btn {
+  width: 100%;
+  padding: 16px;
+  background: var(--green-text);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.primary-btn:hover {
+  background: var(--green-text);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(90, 103, 216, 0.3);
+}
+
+.google-btn {
+  width: 100%;
+  padding: 14px;
+  background: white;
+  color: var(--green-text);
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.google-btn:hover {
+  background: #f8f9fa;
+  border-color: #cbd5e0;
+}
+
+.primary-btn img {
+  width: 100%;
+  max-width: 30px;
+  height: auto;
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+  color: #a0aec0;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.divider span {
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+/* Links */
+.switch-form {
+  text-align: center;
+  margin-top: 25px;
+  color: #4a5568;
+}
+
+.switch-link,
+.forgot-link {
+  color: var(--green-text);
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.switch-link:hover,
+.forgot-link:hover {
+  color: var(--green-text);
+  text-decoration: underline;
+}
+
+.forgot-link {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* OTP */
+.otp-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.otp-container input {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.otp-retry {
+  text-align: center;
+  margin-top: 15px;
+  color: #718096;
+}
+
+/* Success Screen */
+.success-icon {
+  text-align: center;
+  font-size: 60px;
+  color: #48bb78;
+  margin: 20px 0;
+}
+
+.success-message {
+  text-align: center;
+  color: #718096;
+  margin: 15px 0 30px;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .container {
+    padding: 30px 20px;
+    border-radius: 20px;
+  }
+
+  .otp-container input {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 380px) {
+  .tabs {
+    flex-direction: column;
+  }
+
+  .otp-container {
+    gap: 5px;
+  }
+
+  .otp-container input {
+    width: 35px;
+    height: 35px;
+  }
+}

@@ -1,0 +1,8 @@
+const Button= document.getElementById(``);
+id="hotel_partner_btn"
+id="logout_btn"
+id="settings_btn"
+id="booking_and_commission_btn"
+id="deals_btn"
+id="business_profile_btn"
+id="overview_btn"

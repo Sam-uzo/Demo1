@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Esther" />
+    <meta name="description" content="I am working on a capstone project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local Business dashboard pages</title>
+    <link rel="stylesheet" href="form.css" />
+    <script defer src="forms.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <header class="header-content">
+      <div class="logo-close-icon">
+        <svg
+          width="198"
+          height="50"
+          viewBox="0 0 198 50"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M26.0205 46.545C22.8335 49.6555 19.914 51.5555 15.859 48.3152C10.3007 43.8764 3.01524 33.042 0.95321 26.2629C-2.05648 16.3733 2.19523 5.95531 11.81 1.75082C26.6362 -4.7313 42.3755 7.7389 39.7007 23.4987C38.4692 30.7524 31.2799 41.4122 26.0205 46.545ZM20.0641 16.0001C19.4694 15.3658 19.1195 14.5255 18.4932 13.9061C15.3018 10.7464 10.0168 12.0135 8.38733 16.1106C6.43794 21.0106 10.6611 25.9733 14.0568 29.0614C14.7987 29.736 19.3583 33.433 19.9891 33.4569C20.7535 33.0763 21.5119 32.5733 22.2163 32.0912C26.6437 29.0673 33.5747 22.6121 31.7725 16.6792C29.9703 10.7464 22.398 10.5882 20.0641 15.9986V16.0001Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M64.9601 20.7485C69.6625 20.0646 73.3885 23.0676 72.842 28.3529C72.0108 36.3881 58.4081 35.8002 59.8947 25.748C60.2654 23.2411 62.6443 21.0873 64.962 20.7505L64.9601 20.7485ZM65.9155 23.8004C62.2239 24.3802 62.7054 31.3743 66.8116 30.6843C70.4879 30.0657 69.9892 23.1615 65.9155 23.8004Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M95.1006 33.7608C94.6612 33.6179 94.8178 32.8564 95.0051 32.5379C94.3115 32.787 93.83 33.4015 93.0924 33.6567C89.8231 34.7897 85.3233 32.1705 87.2054 28.1835C87.7347 27.0648 89.5843 26.0032 90.7059 26.0032H94.6229C94.193 22.6083 90.5702 23.5698 88.5028 24.6885L87.1901 22.398C87.0888 21.71 90.2779 20.7628 90.8989 20.6974C92.7294 20.5015 94.8542 20.579 96.3484 21.8141C98.7712 23.8148 98.1101 26.7667 98.0547 29.5676C98.0298 30.8292 98.1789 32.1031 98.177 33.3464C98.177 33.5852 98.1636 33.6097 97.9687 33.7628H95.1025L95.1006 33.7608ZM94.6229 28.2468C93.5892 28.2876 90.7059 27.9753 90.3104 29.2573C90.083 29.9943 90.3142 30.4883 90.897 30.9027C92.5727 32.0909 95.2019 30.5557 94.6249 28.2468H94.6229Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M51.6304 17.0208V30.2903H59.1779C59.711 30.2903 59.0213 32.8605 59.4493 33.428L59.1779 33.7608H48V17.0208H51.6304Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M83.0091 25.3437C82.5945 25.0906 82.4569 24.2863 81.5225 23.976C77.101 22.5122 76.0864 29.9799 80.0512 30.6515C81.2015 30.8455 82.8352 30.2249 82.967 28.8612L86.0013 30.5964C83.7046 35.5021 76.1437 34.7814 74.3591 29.79C71.5063 21.8079 82.1149 16.9941 85.816 23.8412C85.323 24.2638 83.5613 25.6847 83.0072 25.3458L83.0091 25.3437Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M118.823 30.0105C118.954 29.8901 119.04 29.5104 119.18 29.4716L120.775 30.723C120.529 32.2745 118.517 33.3177 117.177 33.6627C104.551 36.929 102.617 15.3569 116.31 16.8165C117.477 16.9411 120.166 18.121 120.718 19.2663C120.966 19.7807 119.625 20.6749 119.369 21.0975C116.52 17.9659 111.061 18.5293 109.571 22.8817C107.429 29.1368 114.061 34.3078 118.824 30.0085L118.823 30.0105Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M166.849 28.2487C167.327 30.9475 170.065 32.1826 172.401 31.4232C173.236 31.1517 173.601 30.478 174.398 30.2677L175.52 31.2966C176.064 31.7682 174.146 33.1217 173.773 33.2973C170.088 35.0346 165.072 32.94 164.577 28.3283C163.532 18.5865 176.997 18.2741 176.372 27.9098L176.116 28.2487H166.849ZM174.11 26.4114C173.783 21.7916 167.197 21.7385 167.04 26.4114H174.11Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M126.678 20.9526C136.168 19.4827 136.619 33.6321 128.315 33.8873C120.275 34.1343 119.818 22.0141 126.678 20.9526ZM126.863 23.192C124.056 23.8086 123.428 28.6244 125.405 30.576C127.249 32.395 130.683 31.8111 131.514 29.1817C132.66 25.552 130.566 22.3775 126.863 23.192Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M145.449 25.9011C144.939 21.8263 139.416 22.3999 138.969 25.9194C138.809 27.179 139.181 33.0911 138.87 33.5708C138.492 33.873 136.759 33.8873 136.552 33.5708V21.0934C137.959 20.7749 138.996 20.5463 138.857 22.5326C139.68 21.6262 140.737 21.0301 141.918 20.9036C149.404 20.089 147.541 28.2079 147.717 33.4279C147.526 34.0506 145.97 33.6607 145.451 33.7627C145.229 31.3089 145.749 28.2835 145.451 25.9031L145.449 25.9011Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M150.99 21.2057C151.191 20.5198 152.79 21.2098 153.281 21.1057C153.132 23.3268 153.694 21.9284 154.64 21.4303C156.396 20.5055 159.195 20.6566 160.72 22.0387C163.21 24.2945 162.031 30.4148 162.18 33.5709L161.95 33.7342C158.79 34.1303 159.994 33.0667 159.978 31.0027C159.967 29.3839 159.984 26.8177 159.768 25.303C159.352 22.3918 154.668 22.4082 153.625 25.0437C153.564 25.1988 153.283 26.24 153.283 26.3114V33.7628H150.99V21.2078V21.2057Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M104.367 16V33.7607H100.928V16.3062L101.207 16.049L104.367 16Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M188.798 30.7291C188.697 32.2439 187.023 33.3014 185.768 33.6607C180.135 35.2714 175.671 29.0429 178.731 23.6922C180.789 20.0931 186.71 19.746 188.816 23.4288L187.199 24.7435C185.468 22.1754 181.098 22.549 180.357 25.8357C179.527 29.5185 181.75 32.4848 185.351 31.3763C186.274 31.0925 186.528 30.331 187.203 29.8656L188.798 30.7271V30.7291Z"
+            fill="#0F766E"
+          />
+          <path
+            d="M193.982 18.0415V21.1037L197.048 20.9853L197.23 23.1452H193.982V30.5965C193.982 30.6761 194.347 31.213 194.455 31.3151C195.369 32.1644 196.374 31.3498 197.409 31.3171L198 33.0361C196.338 34.4059 192.665 34.167 191.864 31.8357C191.792 31.6254 191.498 30.3148 191.498 30.1862V23.1431L189.583 23.0247V21.0996H191.498V18.1395L191.777 17.8823L193.982 18.0374V18.0415Z"
+            fill="#0F766E"
+          />
+        </svg>
+      </div>
+      <div class="intro">
+        <h2>Create your business account</h2>
+        <h3>Let's get you started! It takes less than 2 minutes</h3>
+      </div>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="signup">New Account</button>
+        <button class="tab-btn" data-tab="login">Log In</button>
+      </div>
+    </header>
+    <main>
+      <!--signup form-->
+      <form action="" id="signup-form" class="auth-form" data-page="signup">
+        <div class="input-group">
+          <label>Business Name</label>
+          <input type="text" placeholder="Business Name" required />
+        </div>
+        <div class="input-group">
+          <label>Business Email</label>
+          <input type="email" placeholder="businessemail@gmail.com" required />
+        </div>
+        <div class="input-group">
+          <label>Contact Information</label>
+          <input type="tel" placeholder="+234**********" required />
+        </div>
+        <div class="input-group">
+          <label for="">Select Category</label>
+          <select required>
+            <option value="Restaurant..." selected>Restaurant/Cafe</option>
+            <option value="tours...">Tours & Experiences</option>
+            <option value="shopping...">Shopping & Artisan</option>
+            <option value="wellness...">Wellness & Beauty</option>
+            <option value="transport...">Transport & Convenience</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="**********" required />
+          <i class="fas fa-eye toggle-password"></i>
+          <small>must be at least 8 characters long.</small>
+        </div>
+        <div class="input-group">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="**********" required />
+        </div>
+        <div class="checkbox-group">
+          <div class="check">
+          <input type="checkbox" id="terms" />
+          <label for="terms"
+            >I agree to the <a href="/">Terms of Services</a> and
+            <a href="/">Privacy Policy</a></label
+          >
+          </div>
+          <span
+            > <small>By creating an acoount, you agree to LocalConnect's platform
+            guidelines</small></span
+          >
+        </div>
+        <button class="primary-btn" type="button">Create Account</button>
+        <div class="divider">
+          <span>or</span>
+        </div>
+        <button class="primary-btn google-btn" type="button">
+          <i class="fab fa-google"></i>Continue with Google <span><img src="google-icon.png" alt="google-logo"></span>
+        </button>
+        <p class="switch-form">
+          Already have an account?
+          <a href="#" class="switch-link" data-target="login">Log In</a>
+        </p>
+      </form>
+
+      <!--Login page-->
+      <form id="login-form" class="auth-form" data-page="login">
+        <div class="input-group">
+          <label>Business Email</label>
+          <input type="email" placeholder="businessemail@gmail.com" required />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <div class="password-input">
+            <input type="password" placeholder="*********" required />
+            <i class="fas fa-eye toggle-password"></i>
+          </div>
+          <a href="#" class="forgot-link" data-target="forgot"
+            >Forgot Password/</a
+          >
+        </div>
+        <button type="submit" class="primary-btn">Log In</button>
+        <p class="switch-form">
+          Don't have an account?
+          <a href="#" class="switch-link" data-target="signup"
+            >Create an account</a
+          >
+        </p>
+      </form>
+
+      <!--forgot password-->
+      <form id="forgot-form" class="auth-form" data-page="forgot">
+        <h2>Forgot Password?</h2>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="palmandpepper@gmail.com" />
+        </div>
+        <button class="primary-btn" type="button">Send OTP</button>
+        <p class="switch-form">
+          Already have an account?
+          <a href="#" class="switch-link" data-target="login">Log In</a>
+        </p>
+      </form>
+      <!--OTP verification-->
+      <form id="otp-form" class="auth-form" data-page="otp">
+        <h2>Enter OTP</h2>
+        <p class="subtitle">Enter OTP sent to your mail</p>
+        <div class="input-group">
+          <label>OTP</label>
+          <div class="otp-container">
+            <input type="text" maxlength="1" pattern="/d" required />
+            <input type="text" maxlength="1" pattern="/d" required />
+            <input type="text" maxlength="1" pattern="/d" required />
+            <input type="text" maxlength="1" pattern="/d" required />
+            <input type="text" maxlength="1" pattern="/d" required />
+            <input type="text" maxlength="1" pattern="/d" required />
+          </div>
+          <p class="otp-retry">
+            Didn't get an OTP? <a href="#" id="retry-otp">Retry</a>
+          </p>
+        </div>
+        <button type="submit" class="primary-btn">Verify</button>
+        <p class="switch-form">
+          Already have an account <a href="#" data-target="login">Log In</a>
+        </p>
+      </form>
+      <!--Success screen-->
+      <div id="success-screen" class="auth-form" data-page="success">
+        <h2>Account created successfully!</h2>
+        <div class="success-icon">
+
+        </div>
+        <p class="success-message">
+          You can now access your business dashboard.
+        </p>
+        <button id="go-to-dashboard" type="button" class="primary-btn">Go to Dashboard</button>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
